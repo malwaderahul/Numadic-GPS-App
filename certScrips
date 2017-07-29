@@ -1,0 +1,38 @@
+
+
+# generate private key
+openssl genrsa -out ca.key 2048
+
+# generate CA Root certificate request
+openssl req -new -subj "/C=US/ST=Connecticut/L=Stamford/O=Protegrity/CN=protegrity.com" -out ca.csr -key ca.key -config openssl-ca.cnf
+
+# generate self signed CA Root certificate
+openssl x509 -req -days 90 -in ca.csr -signkey ca.key -out ca.crt
+
+# make a pem file 
+openssl x509 -in ca.crt -out ca.pem -outform PEM
+
+
+###server certificate
+
+# generate private key
+openssl genrsa -out server.key 2048
+
+# generate server certificate request
+openssl req -new -subj "/C=US/ST=Connecticut/L=Stamford/O=Protegrity/CN=protegrity.com" -out server.csr -key server.key -config openssl-server.cnf
+
+# generate self signed server certificate signed with our root ca
+openssl ca -batch -cert ca.crt -keyfile ca.key -config openssl-ca.cnf -policy signing_policy -extensions signing_req -out server.crt -infiles server.csr
+
+# make a pem file 
+openssl x509 -in server.crt -out server.pem -outform PEM
+
+
+
+
+###client certificates
+
+openssl genrsa -out client.key 2048
+
+openssl req -key client.key -new -out client.req
+openssl x509 -req -in client.req -CA ca.pem -CAkey ca.key -CAserial ca.srl -out client.pem

@@ -1,0 +1,21 @@
+{
+  "name": "numadic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "mongodb": "^2.2.30",
+    "socket.io": "^2.0.3",
+    "ssl-root-cas": "^1.2.3",
+    "tls": "0.0.1",
+    "websocket": "^1.0.24"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rahul Malwade",
+  "license": "ISC"
+}
