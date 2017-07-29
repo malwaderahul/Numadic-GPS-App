@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Numadic IOT Solutions Pvt Ltd.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/icomoon-social.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/leaflet.css" />
+		<!--[if lte IE 8]>
+		    <link rel="stylesheet" href="css/leaflet.ie.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="css/main.css">
+
+		<script src="js/moment.min.js"></script>
+		<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/moment.js"></script>
+		<script src = "js/angular-moment.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.min.js"></script> -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        
+
+        <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container">
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper"><a href="#"><img src="img/numadic-logo-small.png" alt="Multipurpose Twitter Bootstrap Template"></a></li>
+						<li class="active">
+							<a href="#">Tracking Devices</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Pricing Table -->
+	    <div class="section">
+	    	<div class="container">
+				
+	    		<h2>Devices</h2>
+
+				<div class="section" ng-app="numadApp">
+					<div class="container" ng-controller="deviceController">
+						<div class="row" ng-show = "showDevicePanel">
+							<div class="col-sm-4" ng-repeat="dev in devices">
+								<!-- Product -->
+								<div class="shop-item">
+									<!-- Product Image -->
+									<!-- <div class="image">
+										<a href="page-product-details.html"><img src="img/product1.jpg" alt="Item Name"></a>
+									</div> -->
+									<!-- Product Title -->
+									<div class="price">
+										<h3><a ng-click="getDeviceDetails(dev)" >{{dev.device}}</a></h3>
+									</div>
+									<!-- Product Available Colors-->
+									<div class="price">
+ 										 Last Status: <span>{{dev.status}}</span>	
+									</div>
+									<!-- Product Price  class="title"-->
+									<div class="price"> 
+										Date : {{dev.date | myDateFormat }}
+									</div>
+									<!-- Product Description-->
+									<div class="price">
+										Last Seen Time: {{dev.time | myTimeFormat}}
+									</div>
+									<!-- Add to Cart Button -->
+									<div class="actions">
+										<a ng-click="getDeviceDetails(dev)" class="btn"><i class="icon-shopping-cart icon-white"></i> View More  Details</a>
+									</div>
+								</div>
+								<!-- End Product -->
+							</div>
+							
+						</div>
+						<div class="row" ng-show="showDeviceDetails">
+							<div class="section section-breadcrumbs">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-3">
+											<a href="#" ng-click = "togglePanel()" class="btn btn"><i class="icon-shopping-cart icon-white"></i> Back </a>
+										</div>
+										<div class="col-md-9">
+											<h1>{{selectedDevice}}</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Product Image & Available Colors -->
+							 <div class="col-sm-6">
+								<div class="product-image-large">
+									<img src="img/product3.jpg" alt="Item Name">
+								</div>
+								<div class="colors">
+									<span class="color-white"></span>
+									<span class="color-black"></span>
+									<span class="color-blue"></span>
+									<span class="color-orange"></span>
+									<span class="color-green"></span>
+								</div>
+							</div> 
+							<!-- End Product Image & Available Colors -->
+							<!-- Product Summary & Options -->
+							<div class="col-sm-6 product-details">
+								<div class="price">
+									Last Latitude : {{latitude}}
+								</div>
+								<div class="price">
+									Last Longitude : {{longitude}}
+								</div>
+								<h5></h5>
+								<!-- <table class="shop-item-selections">
+									<!-- Color Selector -->
+									<tr>
+										<td><b>Color:</b></td>
+										<td>
+											<div class="dropdown choose-item-color">
+												<a class="btn btn-sm btn-grey" data-toggle="dropdown" href="#"><span class="color-orange"></span> Orange <b class="caret"></b></a>
+												<ul class="dropdown-menu" role="menu">
+													<li role="menuitem"><a href="#"><span class="color-white"></span> White</a></li>
+													<li role="menuitem"><a href="#"><span class="color-black"></span> Black</a></li>
+													<li role="menuitem"><a href="#"><span class="color-blue"></span> Blue</a></li>
+													<li role="menuitem"><a href="#"><span class="color-orange"></span> Orange</a></li>
+													<li role="menuitem"><a href="#"><span class="color-green"></span> Green</a></li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									<!-- Size Selector -->
+									<tr>
+										<td><b>Size:</b></td>
+										<td>
+											<div class="dropdown">
+												<a class="btn btn-sm btn-grey" data-toggle="dropdown" href="#">XXL <b class="caret"></b></a>
+												<ul class="dropdown-menu" role="menu">
+													<li role="menuitem"><a href="#">XS</a></li>
+													<li role="menuitem"><a href="#">S</a></li>
+													<li role="menuitem"><a href="#">M</a></li>
+													<li role="menuitem"><a href="#">L</a></li>
+													<li role="menuitem"><a href="#">XXL</a></li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									<!-- Quantity -->
+									<tr>
+										<td><b>Quantity:</b></td>
+										<td>
+											<input type="text" class="form-control input-sm input-micro" value="1">
+										</td>
+									</tr>
+								</table> -->
+							</div>
+							<!-- End Product Summary & Options -->
+							
+							<!-- Full Description & Specification -->
+							<div class="col-sm-12">
+								<div class="tabbable">
+									<!-- Tabs -->
+									<ul class="nav nav-tabs product-details-nav">
+										<li ><a href="#tab1" data-toggle="tab">Description</a></li>
+										<li class="active"><a href="#tab2" data-toggle="tab">Device Statistics</a></li>
+									</ul>
+									<!-- Tab Content (Full Description) -->
+									<div class="tab-content product-detail-info">
+										<div class="tab-pane" id="tab1">
+											<h4>Product Description</h4>
+											<p>
+												Donec hendrerit massa metus, a ultrices elit iaculis eu. Pellentesque ullamcorper augue lacus. Phasellus et est quis diam iaculis fringilla id nec sapien. Sed tempor ornare felis, non vulputate dolor. Etiam ornare diam vitae ligula malesuada tempor. Vestibulum nec odio vel libero ullamcorper euismod et in sapien. Suspendisse potenti.
+											</p>
+											<h4>Product Highlights</h4>
+											<ul>
+												<li>Nullam dictum augue nec iaculis rhoncus. Aenean lobortis fringilla orci, vitae varius purus eleifend vitae.</li>
+												<li>Nunc ornare, dolor a ultrices ultricies, magna dolor convallis enim, sed volutpat quam sem sed tellus.</li>
+												<li>Aliquam malesuada cursus urna a rutrum. Ut ultricies facilisis suscipit.</li>
+												<li>Duis a magna iaculis, aliquam metus in, luctus eros.</li>
+												<li>Aenean nisi nibh, imperdiet sit amet eleifend et, gravida vitae sem.</li>
+												<li>Donec quis nisi congue, ultricies massa ut, bibendum velit.</li>
+											</ul>
+											<h4>Usage Information</h4>
+											<p>
+												Donec hendrerit massa metus, a ultrices elit iaculis eu. Pellentesque ullamcorper augue lacus. Phasellus et est quis diam iaculis fringilla id nec sapien. Sed tempor ornare felis, non vulputate dolor. Etiam ornare diam vitae ligula malesuada tempor. Vestibulum nec odio vel libero ullamcorper euismod et in sapien. Suspendisse potenti.
+											</p>
+										</div>
+										<!-- Tab Content (Specification) -->
+										<div class="tab-pane active" id="tab2" >
+											<p>    
+												Sort Seq : ColumnName : {{orderField}} order : {{reverse}}    
+											</p>    
+											<table style="width:100%;" cellspacing="0" cellpadding="0" border="1">    
+												<thead>    
+													<tr>    
+														<th data-ng-repeat="cell in mycolumns" data-ng-init="mywidth = getcolumnwidth(cell); cellvisible=getcolumnShow(cell);"    
+															ng-show="cellvisible">    
+															<a href="" data-ng-init="mycol=getcolumnname(cell);" ng-click="fnSort(cell)">{{cell.caption}}</a>    
+														</th>    
+													</tr>    
+												</thead>    
+												<tbody>    
+													<tr data-ng-repeat="record in mydata| orderBy:orderField:reverse" ng-click="fnRowClick(record)">    
+														<td data-ng-repeat="cell in mycolumns" data-ng-init="mywidth = getcolumnwidth(cell); cellvisible=getcolumnShow(cell);"    
+															ng-style="{width: {{mywidth}} + 'px'}" ng-show="cellvisible">    
+															<input type="text" data-ng-init="mycol=getcolumnname(cell);" data-ng-model="record[mycol]"    
+																	readonly="readonly" />    
+														</td>    
+													</tr>    
+												</tbody>    
+											</table>    
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Full Description & Specification -->
+						</div>
+					</div>
+				</div>
+	    	</div>
+	    </div>
+	    <!-- End Pricing Table -->
+
+	
+
+
+		<!-- Footer -->
+	    <div class="footer">
+	    	<div class="container">
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright">&copy; 2017 Numadic. All rights reserved.</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+
+        <!-- Javascripts -->
+        <script src="js/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.sequence-min.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
+        <script src="js/main-menu.js"></script>
+		<script src="js/template.js"></script>
+		<script src="js/numadApp.js"></script>
+
+    </body>
+</html>
