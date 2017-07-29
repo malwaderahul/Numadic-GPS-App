@@ -1,0 +1,62 @@
+[ req ]
+distinguished_name	= server_distinguished_name
+req_extensions = server_req_extensions
+
+[ server_distinguished_name ]
+countryName         = Country Name (2 letter code)
+countryName_default     = US
+
+stateOrProvinceName     = State or Province Name (full name)
+stateOrProvinceName_default = CT
+
+localityName            = Locality Name (eg, city)
+localityName_default        = Stamford
+
+organizationName         = Organization Name (eg, company)
+organizationName_default    = Protegrity
+
+commonName          = Common Name (e.g. server FQDN or YOUR name)
+commonName_default      = Protegrity
+
+emailAddress            = Email Address
+emailAddress_default        = support@protegrity.com
+
+####################################################################
+[ server_req_extensions ]
+
+subjectKeyIdentifier = hash
+basicConstraints = CA:false
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alternate_names
+nsComment = "OpenSSL Generated Certificate"
+
+####################################################################
+[ alternate_names ]
+DNS.1 = *.app.secured-box.com
+DNS.2 = *.content.secured-force.com
+DNS.3 = *.cs17.content.secured-force.com
+DNS.4 = *.cs17.secured-salesforce.com
+DNS.5 = *.cs17.visual.secured-force.com
+DNS.6 = *.cs18.content.secured-force.com
+DNS.7 = *.cs18.secured-salesforce.com
+DNS.8 = *.cs18.visual.secured-force.com
+DNS.9 = *.na4.content.secured-force.com
+DNS.10 = *.partners.secured-salesforce.com
+DNS.11 = *.realtime.services.secured-box.net
+DNS.12 = *.secured-box.com
+DNS.13 = *.secured-box.net
+DNS.14 = *.secured-box.org
+DNS.15 = *.secured-boxcdn.net
+DNS.16 = *.secured-boxcloud.com
+DNS.17 = *.secured-boxlocalhost.com
+DNS.18 = *.secured-force.com
+DNS.19 = *.secured-salesforce.com
+DNS.20 = *.secured-sfdcstatic.com
+DNS.21 = *.secured-xactlycorp.com
+DNS.22 = *.services.secured-box.com
+DNS.23 = *.services.secured-box.net
+DNS.24 = *.upload.app.secured-box.com
+DNS.25 = *.upload.secured-box.com
+DNS.26 = *.cs4.content.secured-force.com
+DNS.27 = *.secured-adp.com
+

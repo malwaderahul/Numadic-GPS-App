@@ -1,0 +1,55 @@
+[ req ]
+distinguished_name	= server_distinguished_name
+req_extensions = server_req_extensions
+
+[ server_distinguished_name ]
+countryName         = Country Name (2 letter code)
+countryName_default     = US
+
+stateOrProvinceName     = State or Province Name (full name)
+stateOrProvinceName_default = CT
+
+localityName            = Locality Name (eg, city)
+localityName_default        = Stamford
+
+rganizationName         = Organization Name (eg, company)
+organizationName_default    = Protegrity
+
+commonName          = Common Name (e.g. server FQDN or YOUR name)
+commonName_default      = Protegrity
+
+emailAddress            = Email Address
+emailAddress_default        = support@protegrity.com
+
+####################################################################
+[ server_req_extensions ]
+
+subjectKeyIdentifier = hash
+basicConstraints = CA:false
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alternate_names
+nsComment = "OpenSSL Generated Certificate"
+
+####################################################################
+[ alternate_names ]
+DNS.1 = *.secured-force.com
+DNS.2 = *.cs17.content.secured-force.com
+DNS.3 = *.secured-salesforce.com
+DNS.4 = *.cs17.secured-salesforce.com
+DNS.5 = *.partners.secured-salesforce.com
+DNS.6 = *.secured-sfdcstatic.com
+DNS.7 = *.secured-xactlycorp.com
+DNS.8  = *.secured-box.com
+DNS.9 = *.app.secured-box.com
+DNS.10 = *.upload.secured-box.com
+DNS.11 = *.upload.app.secured-box.com
+DNS.12 = *.secured-box.net
+DNS.13 = *.secured-boxcloud.com
+DNS.14 = *.secured-boxcdn.net
+DNS.15 = *.secured-box.org
+DNS.16 = *.realtime.services.secured-box.net
+DNS.17 = *.na4.content.secured-force.com
+DNS.18 = *.content.secured-force.com
+DNS.19 = *.cs18.content.secured-force.com
+DNS.20 = *.cs18.secured-salesforce.com
+DNS.21 = *.cs18.visual.secured-force.com

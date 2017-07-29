@@ -1,0 +1,105 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, ST=Connecticut, L=Stamford, O=Protegrity, CN=protegrity.com
+        Validity
+            Not Before: Jul 24 20:23:12 2017 GMT
+            Not After : Apr 19 20:23:12 2020 GMT
+        Subject: C=US, ST=Connecticut, L=Stamford, O=Protegrity, CN=protegrity.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:de:41:a2:b8:a8:75:ad:15:52:65:ab:cf:ef:3c:
+                    a2:19:ba:4b:dd:b7:d4:6b:2d:16:8e:ec:be:2a:14:
+                    64:3c:5f:e6:6a:fa:5d:a8:9f:d6:b6:b5:52:db:fe:
+                    a9:13:bd:d7:bd:e8:95:ed:57:b5:f8:f1:d5:41:cc:
+                    f3:33:27:20:a9:30:86:a7:70:8a:91:4f:6d:3e:a2:
+                    6d:66:e3:3d:16:45:11:3e:8c:5f:b5:7f:95:9d:ff:
+                    d7:d0:c8:73:76:af:ad:9b:da:6f:b1:6f:01:03:3a:
+                    38:af:0c:19:81:de:15:ee:21:03:30:fa:a2:84:a1:
+                    3b:5f:6d:2b:4a:1b:09:3e:a0:73:4f:da:07:ec:f6:
+                    dd:0c:d4:3d:e4:1c:75:f6:9d:e0:51:3e:50:41:cc:
+                    00:e7:f3:03:34:e2:40:55:cd:7e:2d:2b:48:08:5c:
+                    df:f5:a7:a2:40:c2:57:c0:9c:da:d8:51:8e:12:ee:
+                    c0:94:fe:55:6f:f0:e2:4d:72:11:39:91:39:96:b6:
+                    b5:cf:1f:4a:37:98:0b:5c:8e:fd:08:fe:b1:7c:80:
+                    93:1e:84:26:97:b0:15:d6:d3:a4:b4:91:2a:26:53:
+                    ae:c1:9e:9b:1a:55:13:37:70:7f:f7:bc:f1:25:37:
+                    6b:e9:14:ab:9f:4b:21:69:c7:c4:73:8a:48:87:23:
+                    26:d5
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                8C:DC:F2:CB:2A:96:6B:BD:AD:13:80:42:9F:89:81:4F:F2:8B:4F:E7
+            X509v3 Authority Key Identifier: 
+                DirName:/C=US/ST=Connecticut/L=Stamford/O=Protegrity/CN=protegrity.com
+                serial:EF:E1:A1:09:96:EA:C5:85
+
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Key Usage: 
+                Digital Signature, Non Repudiation, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:*.app.secured-box.com, DNS:*.content.secured-force.com, DNS:*.cs17.content.secured-force.com, DNS:*.cs17.secured-salesforce.com, DNS:*.cs17.visual.secured-force.com, DNS:*.cs18.content.secured-force.com, DNS:*.cs18.secured-salesforce.com, DNS:*.cs18.visual.secured-force.com, DNS:*.na4.content.secured-force.com, DNS:*.partners.secured-salesforce.com, DNS:*.realtime.services.secured-box.net, DNS:*.secured-box.com, DNS:*.secured-box.net, DNS:*.secured-box.org, DNS:*.secured-boxcdn.net, DNS:*.secured-boxcloud.com, DNS:*.secured-boxlocalhost.com, DNS:*.secured-force.com, DNS:*.secured-salesforce.com, DNS:*.secured-sfdcstatic.com, DNS:*.secured-xactlycorp.com, DNS:*.services.secured-box.com, DNS:*.services.secured-box.net, DNS:*.upload.app.secured-box.com, DNS:*.upload.secured-box.com, DNS:*.cs4.content.secured-force.com, DNS:*.secured-adp.com
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+    Signature Algorithm: sha256WithRSAEncryption
+         98:dd:d3:b9:c6:18:7c:a4:aa:93:77:31:d7:9f:9b:f3:37:00:
+         28:36:e8:db:b0:20:c4:e0:f1:af:5a:59:1e:f3:db:5c:44:06:
+         8d:0e:3d:74:e8:43:d4:d2:ce:d1:2c:5e:eb:28:dd:a4:3c:36:
+         51:13:95:3c:3c:9d:45:5c:b1:5d:f8:f6:a8:ef:7d:74:f2:3d:
+         f8:dd:46:54:eb:62:fa:14:86:5e:1c:85:91:7a:44:dd:4e:56:
+         2e:79:7a:9c:d0:d5:18:e5:52:13:ee:12:60:a5:a3:c4:33:75:
+         60:ae:ac:60:d4:fc:48:f9:5b:74:e2:d8:f0:8d:f6:f1:30:a3:
+         60:77:8c:b6:a5:ad:fb:5c:30:b5:79:ea:cc:46:07:d3:46:2e:
+         c9:f6:bb:af:bc:da:41:02:09:53:43:c6:be:10:66:de:12:66:
+         3f:5f:49:56:c1:fd:55:2f:43:19:91:fc:15:53:ae:47:ec:71:
+         91:b0:91:dc:9b:3c:5e:46:b9:e2:b4:83:e5:07:fe:4d:37:61:
+         dc:5d:33:8c:06:4d:35:53:9e:cc:7f:34:d2:d2:e2:2c:78:5f:
+         31:0f:71:ec:e6:ff:c7:22:12:bb:8c:5d:43:8d:7f:b9:7a:81:
+         4d:c4:cc:65:61:d3:52:49:0f:28:ac:b2:71:8e:0f:1c:4e:b0:
+         d2:2b:b7:71
+-----BEGIN CERTIFICATE-----
+MIIHKjCCBhKgAwIBAgIBATANBgkqhkiG9w0BAQsFADBkMQswCQYDVQQGEwJVUzEU
+MBIGA1UECAwLQ29ubmVjdGljdXQxETAPBgNVBAcMCFN0YW1mb3JkMRMwEQYDVQQK
+DApQcm90ZWdyaXR5MRcwFQYDVQQDDA5wcm90ZWdyaXR5LmNvbTAeFw0xNzA3MjQy
+MDIzMTJaFw0yMDA0MTkyMDIzMTJaMGQxCzAJBgNVBAYTAlVTMRQwEgYDVQQIDAtD
+b25uZWN0aWN1dDERMA8GA1UEBwwIU3RhbWZvcmQxEzARBgNVBAoMClByb3RlZ3Jp
+dHkxFzAVBgNVBAMMDnByb3RlZ3JpdHkuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEA3kGiuKh1rRVSZavP7zyiGbpL3bfUay0Wjuy+KhRkPF/mavpd
+qJ/WtrVS2/6pE73XveiV7Ve1+PHVQczzMycgqTCGp3CKkU9tPqJtZuM9FkURPoxf
+tX+Vnf/X0Mhzdq+tm9pvsW8BAzo4rwwZgd4V7iEDMPqihKE7X20rShsJPqBzT9oH
+7PbdDNQ95Bx19p3gUT5QQcwA5/MDNOJAVc1+LStICFzf9aeiQMJXwJza2FGOEu7A
+lP5Vb/DiTXIROZE5lra1zx9KN5gLXI79CP6xfICTHoQml7AV1tOktJEqJlOuwZ6b
+GlUTN3B/97zxJTdr6RSrn0shacfEc4pIhyMm1QIDAQABo4ID5TCCA+EwHQYDVR0O
+BBYEFIzc8ssqlmu9rROAQp+JgU/yi0/nMH4GA1UdIwR3MHWhaKRmMGQxCzAJBgNV
+BAYTAlVTMRQwEgYDVQQIDAtDb25uZWN0aWN1dDERMA8GA1UEBwwIU3RhbWZvcmQx
+EzARBgNVBAoMClByb3RlZ3JpdHkxFzAVBgNVBAMMDnByb3RlZ3JpdHkuY29tggkA
+7+GhCZbqxYUwCQYDVR0TBAIwADALBgNVHQ8EBAMCBeAwggL4BgNVHREEggLvMIIC
+64IVKi5hcHAuc2VjdXJlZC1ib3guY29tghsqLmNvbnRlbnQuc2VjdXJlZC1mb3Jj
+ZS5jb22CICouY3MxNy5jb250ZW50LnNlY3VyZWQtZm9yY2UuY29tgh0qLmNzMTcu
+c2VjdXJlZC1zYWxlc2ZvcmNlLmNvbYIfKi5jczE3LnZpc3VhbC5zZWN1cmVkLWZv
+cmNlLmNvbYIgKi5jczE4LmNvbnRlbnQuc2VjdXJlZC1mb3JjZS5jb22CHSouY3Mx
+OC5zZWN1cmVkLXNhbGVzZm9yY2UuY29tgh8qLmNzMTgudmlzdWFsLnNlY3VyZWQt
+Zm9yY2UuY29tgh8qLm5hNC5jb250ZW50LnNlY3VyZWQtZm9yY2UuY29tgiEqLnBh
+cnRuZXJzLnNlY3VyZWQtc2FsZXNmb3JjZS5jb22CIyoucmVhbHRpbWUuc2Vydmlj
+ZXMuc2VjdXJlZC1ib3gubmV0ghEqLnNlY3VyZWQtYm94LmNvbYIRKi5zZWN1cmVk
+LWJveC5uZXSCESouc2VjdXJlZC1ib3gub3JnghQqLnNlY3VyZWQtYm94Y2RuLm5l
+dIIWKi5zZWN1cmVkLWJveGNsb3VkLmNvbYIaKi5zZWN1cmVkLWJveGxvY2FsaG9z
+dC5jb22CEyouc2VjdXJlZC1mb3JjZS5jb22CGCouc2VjdXJlZC1zYWxlc2ZvcmNl
+LmNvbYIYKi5zZWN1cmVkLXNmZGNzdGF0aWMuY29tghgqLnNlY3VyZWQteGFjdGx5
+Y29ycC5jb22CGiouc2VydmljZXMuc2VjdXJlZC1ib3guY29tghoqLnNlcnZpY2Vz
+LnNlY3VyZWQtYm94Lm5ldIIcKi51cGxvYWQuYXBwLnNlY3VyZWQtYm94LmNvbYIY
+Ki51cGxvYWQuc2VjdXJlZC1ib3guY29tgh8qLmNzNC5jb250ZW50LnNlY3VyZWQt
+Zm9yY2UuY29tghEqLnNlY3VyZWQtYWRwLmNvbTAsBglghkgBhvhCAQ0EHxYdT3Bl
+blNTTCBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUwDQYJKoZIhvcNAQELBQADggEBAJjd
+07nGGHykqpN3Mdefm/M3ACg26NuwIMTg8a9aWR7z21xEBo0OPXToQ9TSztEsXuso
+3aQ8NlETlTw8nUVcsV349qjvfXTyPfjdRlTrYvoUhl4chZF6RN1OVi55epzQ1Rjl
+UhPuEmClo8QzdWCurGDU/Ej5W3Ti2PCN9vEwo2B3jLalrftcMLV56sxGB9NGLsn2
+u6+82kECCVNDxr4QZt4SZj9fSVbB/VUvQxmR/BVTrkfscZGwkdybPF5GueK0g+UH
+/k03YdxdM4wGTTVTnsx/NNLS4ix4XzEPcezm/8ciEruMXUONf7l6gU3EzGVh01JJ
+DyissnGODxxOsNIrt3E=
+-----END CERTIFICATE-----
